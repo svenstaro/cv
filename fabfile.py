@@ -8,7 +8,7 @@ env.colorize_errors = True
 
 def deploy():
     code_dir = "/home/svenstaro/prj/cv"
-    deploy_dir = "/srv/http/customalized.org/"
+    deploy_dir = "/srv/http/pub/customalized.org/"
 
     # clone/pull using keybearer first
     with settings(warn_only=True):
