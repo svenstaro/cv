@@ -2,13 +2,13 @@ from __future__ import with_statement
 from fabric.api import *
 from fabric.contrib.console import confirm
 
-env.hosts = ["apoc"]
+env.hosts = ["oracle"]
 env.use_ssh_config = True
 env.colorize_errors = True
 
 def deploy():
     code_dir = "/home/svenstaro/prj/cv"
-    deploy_dir = "/srv/http/nginx/pub/customalized.org/"
+    deploy_dir = "/srv/http/pub/"
 
     # clone/pull using keybearer first
     with settings(warn_only=True):
